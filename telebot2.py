@@ -17,7 +17,7 @@ def random_name(update, context):
 def pic(update, context):
     context.bot.send_photo(chat_id=update.effective_chat.id, photo=open(PHOTO_PATH, 'rb'))
 
-updater = Updater(token='5845164266:AAHGsthZqqDPydKZIKXDKcn4KAn4medusIc', use_context=True)
+updater = Updater(token='', use_context=True)
 
 updater.dispatcher.add_handler(CommandHandler('start', start)) 
 updater.dispatcher.add_handler(CommandHandler('random', random_name))
